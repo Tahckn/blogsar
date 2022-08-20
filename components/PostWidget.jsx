@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 import moment from 'moment'
 import Link from 'next/link'
 import { getRecentPosts, getSimilarPosts } from '../services'
+import { grpahCMSImageLoader } from '../util'
 
 const PostWidget = ({ categories, slug }) => {
   const [relatedPosts, setRelatedPosts] = useState([])
@@ -16,7 +16,7 @@ const PostWidget = ({ categories, slug }) => {
     } else {
       getRecentPosts().then((result) => setRelatedPosts(result))
     }
-  }, [slug])
+  }, [categories, slug])
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 mb-8">
