@@ -2,6 +2,12 @@
 
 Blogsar is a blog app
 
+## Screenshots
+
+![app image](https://github.com/Tahckn/blogsar/blob/main/public/chrome_x6ppkj0Vj8.jpg?raw=true)
+
+![app image](https://github.com/Tahckn/blogsar/blob/main/public/chrome_x9uH0WuGZG.jpg?raw=true)
+
 ## Project Setup
 
 ```sh
